@@ -60,10 +60,16 @@
   <div id="toast-msg">Tap anywhere to enable motion</div> <!-- Toast message prompting user to tap for motion permission -->
   
   <canvas id="canvas3d"></canvas> <!-- Canvas where 3D scene will be rendered -->
-
+  <script type="importmap">
+  {
+      "imports": {
+          "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@1.12.6/build/runtime.js"
+      }
+  }
+  </script>
   <script type="module">
     
-    import { Application } from './runtime.js'; // Import the Application class from runtime.js to initialize 3D app
+    import { Application } from '@splinetool/runtime'; // Import the Application class from runtime.js to initialize 3D app
 
     const canvas = document.getElementById('canvas3d'); // Get reference to the canvas element
     const app = new Application(canvas, { wasmPath: '/' }); // Create a new Application instance with wasm path configured
