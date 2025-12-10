@@ -27,7 +27,7 @@ Hold your phone naturally (~30–45°), tilt it around, and watch the Spline obj
 - 🎨 Spline Web Runtime integration  
 - 🔒 iOS‑compatible permission handling  
 - 🍃 No frameworks, minimal setup  
-- 🚀 Works locally or over HTTPS with a Cloudflare tunnel  
+- 🚀 Works locally or over HTTPS with a Cloudflare tunnel (requires internet to fetch Spline runtime via importmap)
 
 ## Running Locally
 
@@ -107,12 +107,9 @@ Original SwiftUI project by:
 SwiftUI Version:  
 https://github.com/kapor00/gyro-spline/
 
-
-
 ## Author
 
 Syed Abdur Rahman  
-Vanilla JS implementation based on Spline's Web Runtime.
 
 ---
 
