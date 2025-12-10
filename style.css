@@ -1,0 +1,47 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+    /* Black background for immersive effect */
+}
+
+/* Canvas fills the screen and is displayed as block */
+canvas {
+    display: block;
+}
+
+/* Transparent overlay to capture tap events */
+#tap-overlay {
+    position: absolute;
+    inset: 0;
+    background: transparent;
+    z-index: 10;
+}
+
+/* Toast message style shown at bottom center */
+#toast-msg {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.95);
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    z-index: 20;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    white-space: nowrap;
+    text-align: center;
+}
+
+/* Show toast by setting opacity to 1 */
+#toast-msg.show {
+    opacity: 1;
+}
