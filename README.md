@@ -7,6 +7,8 @@ Originally inspired by Gábor Pribék’s SwiftUI version, this adaptation focus
 
 ## Overview
 
+https://github.com/user-attachments/assets/09c52907-aa0e-48e7-9b77-f50cac8692fa
+
 This project demonstrates:
 
 - Tilt‑based interaction using **DeviceMotion**  
@@ -75,6 +77,25 @@ All files are static — you can host them anywhere:
 
 If deploying in a subdirectory, update your `wasmURL` in `index.html` accordingly.
 
+## Technologies
+
+- JavaScript (Vanilla) – motion handling, scene interaction
+- Spline Web Runtime – embedding and controlling Spline 3D scenes
+- DeviceMotion API – gyroscope & orientation access
+- HTML / CSS – layout, overlay UI, and styling
+- Node.js + serve – lightweight local development server
+- Cloudflare Tunnel (optional) – HTTPS support for iOS motion permissions
+
+## Learn More
+
+[Exporting as Code](https://docs.spline.design/exporting-your-scene/web/exporting-as-code) - Check out docs to know how to export Spline 3d scenes as code
+
+[Official Spline Runtime](https://www.npmjs.com/package/@splinetool/runtime) - Spline 3D Code API for Web
+
+## License
+
+This project is licensed under the MIT License.
+
 ## Credits
 
 This project was inspired by **Gábor Pribék’s SwiftUI Spline Gyro Playground**, which demonstrated the same concept using the native iOS Spline Runtime.
@@ -85,6 +106,8 @@ Original SwiftUI project by:
 
 SwiftUI Version:  
 https://github.com/kapor00/gyro-spline/
+
+
 
 ## Author
 
